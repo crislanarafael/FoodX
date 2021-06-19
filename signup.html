@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="styles.css">
+		<style>
+		@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+		</style>
+		<script type="module" src="script.js"></script>
+	</head>
+	<body>
+		<!-- Navigation Menu -->
+		<nav>
+    		<div>
+        		<a href="index.html" id="logo">
+        		<img id="main-logo" src="logo.png"/>
+    		</div>
+        		
+    		<ul class="nav-menu">
+ 
+        		<li><a href="index.html">Home</a></li>
+        		<li><a href="about.html">About</a></li>
+        		<li><a href="signup.html">Sign Up</a></li>
+        		<li><a href="login.html">Login</a></li>
+    		</ul>
+    	</nav>
+    	
+    	<!-- Main Content -->
+    	
+    	<div class="main-content-wrapper">
+			<main class="main-content">
+				<div class="about-header-info"> 
+					<h1 class="signup-header">FoodX Signup</h1>
+					<form action='/~/FoodX/signup' method='POST' enctype='multipart/form-data'>
+					<!-- Username and password are mandatory to create an account -->
+					Enter a username: <input type='text' name='username' placeholder='Username' required><br>
+					
+					Enter an Email: <input type='email' name='email' placeholder='Email' required><br>
+					
+					Enter a Password: <input type='password' name='password' placeholder='Password' required><br>
+					
+					Upload your Profile Picture: <input type='file' name='profilepic' accept='image/*' required>
+					<br>
+					
+					<label for="FoodXRole">Choose your Role:</label>
+					<select name="FoodXRole" id="FoodXRole" onchange = "showForm()" required>
+    					<option value="">--Please choose an option--</option>
+    					<option value="provider">FoodX Provider</option>
+    					<option value="seeker">FoodX Seeker</option>
+					</select>
+					<div class = "form-group" id="provider" style="display:none">
+            			Type out the food/produce you're offering:
+            			<textarea id = "provider-list" class = "comment-area" name = "comment" placeholder="Enter your comments here..."></textarea>
+            		</div>
+            		<div class = "form-group" id="seeker" style="display:none">
+            			Type out the food/produce you are seeking:
+            			<textarea id = "seeker-list" class = "comment-area" name = "comment" placeholder="Enter your comments here..."></textarea>
+            		</div>
+            		
+			
+
+					<!-- You can add any additional fields attached to the account. For example: -->
+					<!-- <input type='text' name='name' placeholder='Name'> -->
+
+					<br>
+					<input type='submit' value='Sign up'>
+					<input type='hidden' name='redirecturl' value='/~/FoodX/account'>
+					</form>
+					
+					
+					</div>
+				</div>
+			</main>
+		</div>
+		
+		<script type="text/javascript">
+			function showForm(){
+        		let option_selected = document.getElementById("FoodXRole").value;
+        		if(option_selected == "provider"){
+        			console.log("Hello")
+        			document.getElementById("provider").style.display = "block";
+        			document.getElementById("seeker").style.display = "none";
+        		}
+        		if(option_selected == "seeker"){
+        			console.log("Hello2")
+        			document.getElementById("seeker").style.display = "block";
+        			document.getElementById("provider").style.display = "none";
+        		}
+			}
+        </script>
+        <!-- Footer Content -->
+        <div>
+		<footer class="sticky-footer">
+			Created by Crislana and Rebecca for Hydrangea Hacks 2021
+		</footer>
+		</div>
+	</body>
+</html>

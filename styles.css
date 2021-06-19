@@ -1,0 +1,238 @@
+html {
+  background: url(background2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+ 
+}
+
+
+*{
+  padding:0;
+  magin:0;
+  box-sizing: border-box;
+  
+}
+
+body{
+	min-height:100vh;
+}
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(255,255,255,0.65);
+}
+
+.nav-menu{
+  list-style-type: none;
+}
+
+.nav-menu li{
+  display:inline-block;
+  padding: 20px 10px;
+  font-family: 'Jost', sans-serif;
+}
+
+.nav-menu a{
+  color: black;
+  text-decoration: none;
+}
+
+.nav-menu a:hover{
+  color: green;
+}
+
+#main-logo{
+  height:65px;
+  width:300px;
+}
+
+#account-profile-pic{
+  height:140px;
+  width:140px;
+  margin:15px;
+  border-radius: 50%;
+}
+.account-info-area{
+	background: rgba(3,152,158,0.65);
+	border-radius: 10px;
+	margin-left:10px;
+	margin-right:10px;
+}
+
+.flex-container{
+	display: flex;
+	
+}
+
+.profile-name{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.account-text{
+	font-family: 'Jost', sans-serif;
+	color: white;
+}
+
+#logo{
+	margin:0;
+}
+.main-content-wrapper{
+  width:100%;
+  height:100vh;
+}
+
+.menu-line{
+  color: black;
+  width: 20px;
+  height: 5px;
+  margin-bottom: 5px;
+}
+
+.main-content{
+  height:100%;
+  display:flex;
+  justify-content: center;
+  background: rgba(255,255,255,0.65);
+ 
+}
+
+.header-info{
+	padding-top: 70px;
+}
+
+.about-header-info{
+	padding:0;
+}
+
+.tag-line{
+	font-family: 'Jost', sans-serif;
+	font-weight: bold;
+	font-size: 90px;
+	text-align: center;
+	
+}
+
+p{
+	text-align: center;
+	font-family: 'Jost', sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+
+footer{
+	background: rgba(255,255,255,0.65);
+	text-align: center;
+	font-family: 'Jost', sans-serif;
+	font-weight: bold;
+}
+
+.signupButton {
+	background-color:#03989e;
+	border-radius:28px;
+	border:1px solid #18ab29;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:18px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.singupButton:hover {
+	background-color:#5cbf2a;
+}
+.signupButton:active {
+	position:relative;
+	top:1px;
+}
+
+#sign-up-button{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+
+form{
+	font-family: 'Jost', sans-serif;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=file], textarea, select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-family: 'Jost', sans-serif;
+      font-size: 12px;
+    }
+.signup-header{
+	margin: 0;
+	font-weight: bold;
+	font-size: 70px;
+	text-align: center;
+	font-family: 'Jost', sans-serif;
+}
+
+.login-header{
+	margin: 0;
+	padding-top:50px;
+	font-weight: bold;
+	font-size: 70px;
+	text-align: center;
+	font-family: 'Jost', sans-serif;
+}
+input[type=submit] {
+      display: block;
+      width: 100%;
+      padding: 0.75rem;
+      background: #03989e;
+      border: 2px solid #2c493f ;
+      color: white;
+      border-radius: 2px;
+      cursor: pointer;
+    }
+    
+.logoutButton {
+	  display: block;
+      width: 20%;
+      padding: 0.75rem;
+      background: #03989e;
+      border: 2px solid #2c493f ;
+      color: white;
+      border-radius: 2px;
+      cursor: pointer;
+      text-align: center;
+}
+
+.logout-container{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+    .sticky-footer{
+    	position: sticky;
+    	
+    	margin-top: auto;
+    }
+    
+    .account-name{
+    	display:inline;
+    	font-family: 'Jost', sans-serif;
+		font-weight: bold;
+		font-size: 3em;
+		text-align: center;
+    }

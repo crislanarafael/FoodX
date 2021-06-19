@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css">
+		<style>
+		@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+		</style>
+		<script type="module" src="script.js"></script>
+	</head>
+	<body>
+		<!-- Navigation Menu -->
+		<nav>
+    		<div>
+        		<a href="#" id="logo">
+        		<img id="main-logo" src="logo.png"/>
+    		</div>
+        		
+    		<ul class="nav-menu">
+ 
+        		<li><a href="#">Home</a></li>
+        		<li><a href="about.html">About</a></li>
+        		<li><a href="signup.html">Sign Up</a></li>
+        		<li><a href="signup.html">Login</a></li>
+    		</ul>
+    	</nav>
+    	
+    	<!-- Main Content -->
+    	
+    	<div class="main-content-wrapper">
+			<main class="main-content">
+				<div class="header-info"> 
+					{{#private}}
+					<h1 class="account-name">Hello {{username}}. Welcome to your Account.</h1>
+					<div class = "account-info-area">
+						<div class="flex-container">
+							<div>
+								<img src="{{profilepic}}" id="account-profile-pic">
+							</div>
+							<div class="profile-name">
+								<h3 class="account-text">Username: {{username}} 
+								<br> Email: {{email}} <br>
+								Status: {{FoodXRole}}</h3>
+							</div>
+						</div>
+						<div class="flex-container">
+							<div style="margin:15px"><h3 class="account-text">Food items I need as a FoodX Seeker or Food items I can provide as a FoodX Provider:<br> {{comment}} </h3>
+							</div>
+						</div>
+						
+					</div>
+					<br>
+					<div class="logout-container">
+						<button onclick='logout()' class="logoutButton">Log out</button>
+					</div>
+					
+					{{/private}}
+				</div>
+				
+				{{^private}}
+				<script>
+					
+				</script>
+			{{/private}}
+			</main>
+		</div>
+		
+		<!-- Footer Content -->
+		<footer class="sticky-footer">
+			Created by Crislana and Rebecca for Hydrangea Hacks 2021
+		</footer>
+	</body>
+</html>
