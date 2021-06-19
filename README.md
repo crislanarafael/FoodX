@@ -1,4 +1,4 @@
-Enter Project Name
+FoodX
 ==================
 ## What this project does
 
