@@ -1,7 +1,10 @@
 Welcome to FoodX
 ==================
+![Welcome to FoodX](https://github.com/crislanarafael/FoodX/blob/main/mainpage.PNG?raw=true)
 ## Project Inspiration
 2020 being a difficult year is a _severe_ understatement. While many people struggled with accepting the significance of COVID-19, many other people struggled with other issues such as joblessness, homelessness, and food insecurity. The concept behind **FoodX** is to solve food insecurity by making it easier to connect those who have food to donate with those who need food. Through **FoodX** we will try to dramatically decrease the amount of food that ends up in U.S. landfills every year. When our users connect via **FoodX**, they help solve the problem of food waste while also strengthening ties to their local communities. With **FoodX** we can do more than survive. We can thrive.
+
+Our name comes from a play on words of FedEx and Food exchange. Like the transportation company, we feel that **FoodX** can be a great and effective delivery method for facilitating food exchange.
 
 ## What this project does
 **FoodX** facilitates food donation. It's that simple. Some of the largest hurdles to donating food identified by restaurants and retail/wholesale grocery facilities is a worry about liability as well as the transportation and storage of donated foods. **FoodX** solves this problem by allowing donors and recipients to communicate as directly as possible. The ease of this build is that it can connect the users in a very short time, thus eliminating the transportation and storage issues. **FoodX** also educates users on ways to reduce food waste and the legalities around food donation in the United States.
