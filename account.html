@@ -6,6 +6,7 @@
 		@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 		</style>
 		<script type="module" src="script.js"></script>
+		<title>FoodX</title>
 	</head>
 	<body>
 		<!-- Navigation Menu -->
@@ -37,7 +38,7 @@
 								<img src="{{profilepic}}" id="account-profile-pic">
 							</div>
 							<div class="profile-name">
-								<h3 class="account-text">Username: {{username}} 
+								<h3 class="account-text" id="username">Username: {{username}} 
 								<br> Email: {{email}} <br>
 								Status: {{FoodXRole}}</h3>
 							</div>
@@ -49,7 +50,10 @@
 						
 					</div>
 					<br>
+					
 					<div class="logout-container">
+						<button class="logoutButton" id="edit" onclick="edit_username()">Edit Username</button>
+						<button class="chatButton" onclick="window.open('https://alerthorse44.qoom.space/~/FoodX/chat','popup','width=600,height=600'); return false;" target="_blank">Chat with other FoodXers</button>
 						<button onclick='logout()' class="logoutButton">Log out</button>
 					</div>
 					
@@ -68,5 +72,41 @@
 		<footer class="sticky-footer">
 			Created by Crislana and Rebecca for Hydrangea Hacks 2021
 		</footer>
+		
+		{{#private}}
+			<script>
+				const $yourusername = document.getElementById("#username");
+				
+				function edit_username() {
+					var new_username = prompt("Edit Your Username: ");
+					const resp = fetch('/~/FoodX/account/profile', { 
+						method: 'PATCH'
+						, body: JSON.stringify({username: new_username})
+						, headers: { 'Content-Type': 'application/json' }
+					})
+					alert('saved')
+					/*$yourusername.innerHTML = "{{username}}"*/
+					location.reload()
+				}
+				
+				fetch("FoodX.json")
+				
+				/*const $yourusername = document.getElementById("#username");
+				const $saveusername = document.getElementById("saveusername");
+				const $button = document.querySelector("#edit");
+				
+				$button.addEventListener('click', async () => {
+					const newusername = $yourusername.value.trim();
+					if(!newusername) return alert('Please enter a user name');
+					const resp = await fetch('/~/FoodX/account/profile', { 
+						method: 'PATCH'
+						, body: JSON.stringify({username: newusername})
+						, headers: { 'Content-Type': 'application/json' }
+					})
+					alert('saved')
+				})*/
+				
+			</script>
+		{{/private}}
 	</body>
 </html>

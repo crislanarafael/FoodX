@@ -7,6 +7,7 @@
 		@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
 		</style>
 		<script type="module" src="script.js"></script>
+		<title>FoodX</title>
 	</head>
 	<body>
 		<!-- Navigation Menu -->
@@ -20,6 +21,7 @@
  
         		<li><a href="index.html">Home</a></li>
         		<li><a href="about.html">About</a></li>
+        		<li><a href="resources.html">Resources</a></li>
         		<li><a href="signup.html">Sign Up</a></li>
         		<li><a href="login.html">Login</a></li>
     		</ul>
@@ -48,6 +50,22 @@
     					<option value="provider">FoodX Provider</option>
     					<option value="seeker">FoodX Seeker</option>
 					</select>
+					<script>
+					$(function()
+					{
+						$("FoodXChoice").select2();
+					});
+					</script>
+					
+					<!--<label for="FoodXChoice">Select the food you're offering/in search of:</label>
+					<select name="FoodXChoice" id="FoodXChoice" onchange = "showForm()" required multiple = "multiple">
+    					<option value="">--Please choose relevant options--</option>
+    					<option value="produce">Fresh Produce</option>
+    					<option value="non-perishable">Non-Perishable Foods</option>
+    					<option value = "meal">Hot Meal</option>
+    					<option value = "vegetarian">Vegetarian</option>
+    					<option value = "allergen">Allergy-friendly</option>
+					</select> -->
 					<div class = "form-group" id="provider" style="display:none">
             			Type out the food/produce you're offering:
             			<textarea id = "provider-list" class = "comment-area" name = "comment" placeholder="Enter your comments here..."></textarea>
@@ -57,7 +75,10 @@
             			<textarea id = "seeker-list" class = "comment-area" name = "comment" placeholder="Enter your comments here..."></textarea>
             		</div>
             		
-			
+			<!-- Would it be better or possible to add categorized options for the food/produce being
+			offered and accepted? This would give us more control over the input and hopefully prevent
+			error messages from occurring. 
+			Ex: Produce, Nut-free, Soy-Free, Vegetarian, Hot Meal, etc -->
 
 					<!-- You can add any additional fields attached to the account. For example: -->
 					<!-- <input type='text' name='name' placeholder='Name'> -->
