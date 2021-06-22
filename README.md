@@ -26,3 +26,6 @@ We are most proud of our communication throughout the weekend of this hackathon 
 
 ## What is next for this project
 We would like to see **FoodX** scaled significantly. We initially created this project with a very local location in mind. To assist in scaling the project we would possibly need to create more specific filtering methods. We may want to integrate a map into the program so that users can filter respondents and be matched via their location to ensure local donations. Scaling this project could also involve adding additional types of donations, such as donating for food recycling/composting instead of for human consumption.
+
+## Try It Out
+[Try the FoodX Demo Here](https://alerthorse44.qoom.space/~/FoodX)
