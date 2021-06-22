@@ -3,7 +3,7 @@ Welcome to FoodX
 ![Welcome to FoodX](https://github.com/crislanarafael/FoodX/blob/main/mainpage.PNG?raw=true)
 
 ## Developers
-Created by rislana Rafael and Rebecca Zuick as project submission for Hydrangea Hacks 2021. <br><br> **Update:** FoodX was one of the winning submissions at Hydrangea Hacks and winner of the Qoom Track out of 84 other projects and 701 hackers. We're excited to expand upon our project in the near future! :tada::tada::tada:
+Created by rislana Rafael and Rebecca Zuick as project submission for Hydrangea Hacks 2021. <br><br> **June 22, 2021 Update:** FoodX was one of the winning submissions at Hydrangea Hacks and winner of the Qoom Track out of 84 other projects and 701 hackers. We're excited to expand upon our project in the near future! :tada::tada::tada:
 
 ## Project Inspiration
 2020 being a difficult year is a _severe_ understatement. While many people struggled with accepting the significance of COVID-19, many other people struggled with other issues such as joblessness, homelessness, and food insecurity. The concept behind **FoodX** is to solve food insecurity by making it easier to connect those who have food to donate with those who need food. Through **FoodX** we will try to dramatically decrease the amount of food that ends up in U.S. landfills every year. When our users connect via **FoodX**, they help solve the problem of food waste while also strengthening ties to their local communities. With **FoodX** we can do more than survive. We can thrive.
